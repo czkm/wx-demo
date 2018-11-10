@@ -1,0 +1,30 @@
+<!--pages/list/list.wxml-->
+<import src='/pages/template/list-template.wxml' />
+<!-- <import src='/pages/template/list-slider-template.wxml' /> -->
+<view>
+  <swiper indicator-dots indicator-color='green' indicator-active-color='gold' catchtap='SliderToDetail'>
+    <swiper-item>
+      <image data-index='0' src='/img/slider/bg.jpg'></image>
+    </swiper-item>
+
+    <swiper-item>
+      <image data-index='1' src='/img/slider/bg2.jpg'></image>
+    </swiper-item>
+
+    <swiper-item>
+      <image data-index='3' src='/img/slider/bg4.jpg'></image>
+    </swiper-item>
+
+    <swiper-item>
+      <image data-index='4' src='/img/slider/bg5.jpg'></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<block >
+  <view >
+    <template  is='listTemplate' data="{{listArr}}"/>
+  </view>
+</block>
+
+  

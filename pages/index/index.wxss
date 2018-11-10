@@ -1,0 +1,36 @@
+/* pages/index/index.wxss */
+page{
+  height: 100%;
+  background: #e69e9e;
+}
+button{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin: 50rpx 0;
+}
+.indexContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userimg{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+  margin: 100rpx 0;
+}
+.username{
+  font-size: 32rpx;
+  font-weight: bold;
+  margin: 100rpx 0;
+}
+.next{
+  width: 200rpx;
+  height: 80rpx;
+  font-size: 28rpx;
+  border: 1px solid #999;
+  border-radius: 100rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #fff;
+}

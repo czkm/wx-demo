@@ -1,0 +1,24 @@
+<!--pages/detail/detail.wxml-->
+<view class='detailContainer'> 
+<view class='detailimg'>
+  <image src='{{detailObj.imglist[index].src}}'></image>
+</view>
+<view class='detailan'>
+  <image src='/img/detail/another1.jpg'></image>
+</view>
+<view class='detailtxt'>
+  <text class='detailtxt_title'>{{detailObj.imglist[index].title}}</text>
+  <text class='detailtxt_info'>{{detailObj.imglist[index].listinfo}}</text>
+  <text></text>
+  <text class='detailtxt_price'>{{detailObj.imglist[index].price}}</text>
+</view>
+<view wx:if='{{isCollected}}' catchtap='handleCollection'>
+<button class='detail_btn_collected'>已加入</button>
+</view>
+<view wx:if='{{!isCollected}}' catchtap='handleCollection'>
+<button class='detail_btn'>加入购物车</button>
+</view>
+<view class='detail_recommended '>
+  <image src='/img/detail/detail2.jpg'></image>
+</view>
+</view>

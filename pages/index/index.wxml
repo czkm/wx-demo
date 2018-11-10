@@ -1,0 +1,8 @@
+<!--pages/index/index.wxml-->
+<view class='indexContainer'>
+<image class='userimg' src='{{userinfo.avatarUrl}}'></image>
+<button bindgetuserinfo='handleGetUserInfo' open-type='getUserInfo' style='display:{{isShow?"block":"none"}}'>用户授权</button>
+<text class='username'>HELLO{{userinfo.nickName}}</text>
+
+<view catchtap='hadleNext' class='next'>按钮</view>
+</view>

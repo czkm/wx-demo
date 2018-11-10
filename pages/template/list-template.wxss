@@ -1,0 +1,37 @@
+.listTemplate{
+  display: flex;
+  /* flex-direction: column; */
+}
+
+  .list-main{
+    margin-top: 20rpx;
+    clear: both;
+  }
+  .single{
+    width: 100%;
+    display: block;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+  }
+  .singleimg{
+    width: 100%
+  }
+  
+	.img-list{
+	  float: left;
+	  margin-left: 20rpx;
+	  margin-top: 20rpx;
+	  position: relative;
+	}
+	.imgt-photo{
+	  width: 350rpx;
+	  height: 350rpx;
+	}
+	.list-desc{
+    width: 300rpx;
+	  display: block;
+	  text-align: center;
+	  font-size: 25rpx;
+	  padding: 10rpx;
+
+	}

@@ -1,0 +1,13 @@
+<template name='listTemplate'>
+  <view class='Tempcontainer' wx:for="{{listArr}}" wx:key="index">
+  <view class='single' wx:for="{{item.single_img}}" wx:for-item="single_img" wx:key="index">
+      <image class='singleimg' src='{{single_img.src}}' mode="widthFix"></image>
+  </view>
+    <view class='list-main'>
+      <view class="img-list" wx:for="{{item.imglist}}" wx:for-item="imglist" wx:key="index" catchtap='toDetail' data-index='{{index}}' data-item='{{item.item}}'>
+        <image class="imgt-photo" src='{{imglist.src}}'  />
+        <text class="list-desc">{{imglist.title}}</text>
+      </view>
+    </view>
+  </view>
+</template>
