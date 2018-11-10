@@ -71,7 +71,7 @@ Page({
       key: 'isCollected',
       success: (datas) =>{
         // console.log(data, typeof data)
-        //缓存到本地
+        //缓存到本地文件
         let obj = datas.data;
         console.log(obj);  //{00:ture}
         obj[gdata] = isCollected;
