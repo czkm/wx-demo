@@ -46,6 +46,7 @@ Page({
     }
 
   },
+  //控制用户加入购物车
   handleCollection() {
     //设置标识记录缓存
     let gitem = this.options.data[0];
@@ -86,6 +87,16 @@ Page({
       },
     })
 
+  },
+  //控制用户分享
+  handleShare(){
+    wx.showActionSheet({
+      itemList: [
+        '分享到朋友圈',
+        '分享到qq空间',
+        '分享到微博',
+      ],
+    })
   },
 
   /**

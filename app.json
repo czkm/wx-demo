@@ -1,10 +1,9 @@
 {
   "pages": [
-    
-   
+    "pages/index/index",
     "pages/list/list",
     "pages/detail/detail",
-    "pages/index/index"
+    "pages/shopcart/shopcart"
   ],
   "window": {
     "navigationBarBackgroundColor": "#e69e9e",
@@ -13,5 +12,21 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/list/list",
+      "text": "推荐",
+      "iconPath": "/img/icon/recommend.png",
+      "selectedIconPath": "/img/icon/recommend_on.png"
+    },
+    {
+      "pagePath": "pages/shopcart/shopcart",
+      "text": "购物车",
+      "iconPath": "/img/icon/shopcart.png",
+      "selectedIconPath": "/img/icon/shopcart_on.png"
+    }    
+  ]
   }
 }

@@ -51,10 +51,15 @@ Page({
 
   },
   hadleNext(){
-    //点击页面跳转
-    wx.redirectTo({
-      url: '/pages/list/list',
+    //跳转跳转到 tabBar 页面要switchTab
+    wx.switchTab({
+      url: '/pages/list/list'
     })
+    //点击页面跳转
+    // wx.redirectTo({
+    //   url: '/pages/list/list',
+    // })
+    console.log(1)
   },
 
   /**

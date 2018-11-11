@@ -58,3 +58,17 @@
 .detail_btn_collected  {
   background-color: gold
 }
+.detail_btn_group{
+  display: block;
+  /* flex-direction: row; */
+}
+.detail_btn_share{
+  width: 50%;
+  height: 100rpx;
+  float: left;
+}
+.detail_btn_transmit{
+  width: 50%;
+  height: 100rpx;
+  float: right;
+}

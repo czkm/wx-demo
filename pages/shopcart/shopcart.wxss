@@ -1,0 +1,297 @@
+/* pages/shopchart/shopcart.wxss */
+page {
+
+  height: 100%;
+  background: #fff;
+  font-family: -apple-system-font, Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 32rpx;
+  line-height: 1.42857;
+}
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.section-good {
+  margin-bottom: 100rpx;
+}
+
+.good {
+  float: left;
+  width: 100%;
+  height: 300rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/*  第一个盒子  */
+.good .good_title {
+  float:left;
+  box-sizing:border-box;
+  padding:0;
+  width:100%;
+  height:70rpx;
+  line-height:70rpx;
+  border-bottom:1px solid #ccc;
+}
+.good .good_title view:first-of-type {
+  float: left;
+}
+.good .good_title view:last-of-type {
+  float: right;
+}
+.good .good_title .shanchu .shanchu_trash {
+  float: left;
+  margin-top: 8rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+.good .good_title .shanchu .shanchu_trash image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 第二个盒子  */
+.good .good_content {
+  box-sizing: border-box;
+  float:left;
+  width:100%;
+  height:226rpx;
+  background-color:#f5f5f5;
+}
+
+
+.good_content .good:last-child {
+  border-bottom: none;
+}
+
+.good_content .good_checkbox {
+  float:left;
+  width:70rpx;
+  height:224rpx;
+  line-height: 278rpx;
+}
+
+
+.good_content .checkbox {
+  float: left;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.good_content .good_img {
+  float:left;
+  margin-top:16rpx;
+  width:215rpx;
+  height:190rpx;
+}
+.good_content .good_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.good_content .content {
+  box-sizing: border-box;
+  float:left;
+  margin-top:16rpx;
+  margin-left:20rpx;
+  width:384rpx;
+  height:90rpx;
+
+}
+
+.good_content .content .titles {
+  float:left;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  font-size:15px;
+  width:369rpx;
+  height:86rpx;
+  color:#000;
+  line-height: 44rpx;
+}
+
+.good_content .good_footer {
+  box-sizing:border-box;
+  float:left;
+  margin-top:16rpx;
+  margin-left:20rpx;
+  width:354rpx;
+  height:90rpx;
+}
+
+.good_content .content .price {
+  font-size: 36rpx;
+  color: #e4452a;
+  margin-top: 10rpx;
+}
+
+.good_content .good .stepper {
+  float: left;
+  margin-top: 15rpx;
+  margin-left: 60rpx;
+  width: 162rpx;
+  height: 50rpx;
+}
+
+.good_content .good_footer .price {
+  float: left;
+  width: 30%;
+  height:50rpx;
+  margin-top:15rpx;
+  color:#FF5501;
+  font-size:17px;
+
+}  
+
+.good_content .good_footer .stepper {
+  float: left;
+  margin-top: 10rpx;
+  width: 50%;
+  margin-left: 70rpx;
+} 
+
+
+.good_content .stepper .add, .stepper .subtract {
+    float: left;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.good_content .stepper .disabled {
+  float: left;
+  color: #eee;
+}
+
+.good_content .stepper .count {
+    float: left;
+  width: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  /* border: 1px solid #ccc; */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 1rem;
+  font-size: 28rpx;
+}
+
+
+/*******底部********************************************  */
+.section-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 99;
+}
+
+.section-bottom .btn {
+  width: 160rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fdfffd;
+  background-color: #fbb304;
+}
+
+.section-bottom .btn-default {
+  color: #363636;
+  background-color: #eee;
+}
+
+.section-bottom .btn-primary {
+  color: #fdfffd;
+  background-color: #e83632;
+}
+
+.section-bottom .checkbox-allcheck {
+  display: inline-block;
+  margin-left: 30rpx;
+  vertical-align: top;
+  font-size: 0px;
+}
+
+.section-bottom .check-all-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10rpx;
+  height: 23px;
+  line-height: 23px;
+  font-size: 28rpx;
+}
+
+.section-bottom .total {
+  flex: 1;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.total .totalCount {
+  font-size: 26rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.total .totalPrice {
+  display: inline-block;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.total .totalCount text {
+  color: #e4452a;
+  vertical-align: middle;
+}
+
+.total .totalPrice text {
+  color: #e4452a;
+  font-size: 36rpx;
+  vertical-align: middle;
+}
+
+
+/*   空购物车  */
+.cartList {  
+  padding: 100px 0 0 0;  
+  display: flex;  
+  justify-content: center;  
+  flex-direction: column;  
+  align-items: center;  
+  color: #999;  
+}  
+  
+.cartList image {  
+  width: 66px;  
+  height: 66px;  
+  margin-bottom: 20px;  
+}  

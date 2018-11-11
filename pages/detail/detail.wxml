@@ -12,12 +12,21 @@
   <text></text>
   <text class='detailtxt_price'>{{detailObj.imglist[index].price}}</text>
 </view>
+
+<view class='detail_btn_group'> 
+  <view  >
+  <button class='detail_btn_share'  catchtap='handleShare' >分享给好友</button>
+  <button class='detail_btn_transmit' open-type='share'>转发商品</button>
+  </view>
+</view>
+
 <view wx:if='{{isCollected}}' catchtap='handleCollection'>
 <button class='detail_btn_collected'>已加入</button>
 </view>
 <view wx:if='{{!isCollected}}' catchtap='handleCollection'>
-<button class='detail_btn'>加入购物车</button>
+<button class='detail_btn_collect'>加入购物车</button>
 </view>
+
 <view class='detail_recommended '>
   <image src='/img/detail/detail2.jpg'></image>
 </view>
